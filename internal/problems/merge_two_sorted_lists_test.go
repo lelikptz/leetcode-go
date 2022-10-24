@@ -31,6 +31,14 @@ func TestMergeTwoLists(t *testing.T) {
 			},
 			want: createList(1, 2, 3, 4, 5, 6, 7),
 		},
+		{
+			name: "Third",
+			args: args{
+				a: createList(7, 82),
+				b: createList(5, 32, 79),
+			},
+			want: createList(5, 7, 32, 79, 82),
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
