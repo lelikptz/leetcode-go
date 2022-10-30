@@ -36,6 +36,14 @@ func TestAddBinary(t *testing.T) {
 			},
 			want: "110111101100010011000101110110100000011101000101011001000011011000001100011110011010010011000000000",
 		},
+		{
+			name: "Five",
+			args: args{
+				a: "1111",
+				b: "1111",
+			},
+			want: "11110",
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
