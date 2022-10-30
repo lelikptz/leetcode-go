@@ -1,6 +1,8 @@
 package problems
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestRemoveElement(t *testing.T) {
 	type args struct {
@@ -26,8 +28,8 @@ func TestRemoveElement(t *testing.T) {
 			name: "Second",
 			args: args{
 				nums:         []int{0, 1, 2, 2, 3, 0, 4, 2},
-				expectedNums: []int{0, 1, 4, 0, 3},
-				val:          3,
+				expectedNums: []int{0, 1, 3, 0, 4},
+				val:          2,
 			},
 			want: 5,
 		},
