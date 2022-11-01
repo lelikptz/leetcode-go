@@ -1,4 +1,4 @@
-package problems
+package simple
 
 func RemoveDuplicates(nums []int) int {
 	l := 0

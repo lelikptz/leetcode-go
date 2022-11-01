@@ -1,4 +1,4 @@
-package problems
+package simple
 
 func PlusOne(digits []int) []int {
 	for i := len(digits) - 1; i >= 0; i-- {

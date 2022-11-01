@@ -1,4 +1,4 @@
-package problems
+package simple
 
 func LongestCommonPrefix(strings []string) string {
 	counter := 0

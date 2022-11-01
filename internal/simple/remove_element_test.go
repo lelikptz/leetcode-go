@@ -1,4 +1,4 @@
-package problems
+package simple
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package problems
+package simple
 
 func ClimbStairs(n int) int {
 	fib := make(map[int]int)

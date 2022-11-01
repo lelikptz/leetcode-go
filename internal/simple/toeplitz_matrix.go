@@ -1,4 +1,4 @@
-package problems
+package simple
 
 func IsToeplitzMatrix(matrix [][]int) bool {
 	for row := 0; row < len(matrix); row++ {

@@ -1,3 +1,3 @@
-module bitbucket.org/lelik-orlov/leetcode
+module github.com/lelikptz/leetcode-go
 
-go 1.18
+go 1.19

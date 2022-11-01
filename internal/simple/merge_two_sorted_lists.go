@@ -1,4 +1,4 @@
-package problems
+package simple
 
 type ListNode struct {
 	Val  int
