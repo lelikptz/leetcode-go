@@ -1,10 +1,5 @@
 package simple
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func MergeTwoLists(a *ListNode, b *ListNode) *ListNode {
 	head := &ListNode{
 		Val:  0,
