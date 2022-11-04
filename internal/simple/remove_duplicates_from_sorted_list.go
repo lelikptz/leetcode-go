@@ -1,6 +1,8 @@
 package simple
 
-func DeleteDuplicates(head *ListNode) *ListNode {
+import "github.com/lelikptz/leetcode-go/internal/structure"
+
+func DeleteDuplicates(head *structure.ListNode) *structure.ListNode {
 	cur := head
 	for head != nil && head.Next != nil {
 		if head.Val == head.Next.Val {

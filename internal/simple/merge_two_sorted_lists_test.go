@@ -1,43 +1,44 @@
 package simple
 
 import (
+	"github.com/lelikptz/leetcode-go/internal/structure"
 	"reflect"
 	"testing"
 )
 
 func TestMergeTwoLists(t *testing.T) {
 	type args struct {
-		a *ListNode
-		b *ListNode
+		a *structure.ListNode
+		b *structure.ListNode
 	}
 	tests := []struct {
 		name string
 		args args
-		want *ListNode
+		want *structure.ListNode
 	}{
 		{
 			name: "First",
 			args: args{
-				a: CreateList(1, 2, 4),
-				b: CreateList(1, 3, 4),
+				a: structure.CreateList(1, 2, 4),
+				b: structure.CreateList(1, 3, 4),
 			},
-			want: CreateList(1, 1, 2, 3, 4, 4),
+			want: structure.CreateList(1, 1, 2, 3, 4, 4),
 		},
 		{
 			name: "Second",
 			args: args{
-				a: CreateList(1, 2, 3, 4),
-				b: CreateList(5, 6, 7),
+				a: structure.CreateList(1, 2, 3, 4),
+				b: structure.CreateList(5, 6, 7),
 			},
-			want: CreateList(1, 2, 3, 4, 5, 6, 7),
+			want: structure.CreateList(1, 2, 3, 4, 5, 6, 7),
 		},
 		{
 			name: "Third",
 			args: args{
-				a: CreateList(7, 82),
-				b: CreateList(5, 32, 79),
+				a: structure.CreateList(7, 82),
+				b: structure.CreateList(5, 32, 79),
 			},
-			want: CreateList(5, 7, 32, 79, 82),
+			want: structure.CreateList(5, 7, 32, 79, 82),
 		},
 	}
 	for _, tt := range tests {

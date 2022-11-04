@@ -1,7 +1,9 @@
 package simple
 
-func MergeTwoLists(a *ListNode, b *ListNode) *ListNode {
-	head := &ListNode{
+import "github.com/lelikptz/leetcode-go/internal/structure"
+
+func MergeTwoLists(a *structure.ListNode, b *structure.ListNode) *structure.ListNode {
+	head := &structure.ListNode{
 		Val:  0,
 		Next: nil,
 	}
