@@ -5,12 +5,12 @@ import (
 	"strings"
 )
 
-func GroupAnagrams(strs []string) [][]string {
-	m := map[[100]string][]string{}
-	for _, s := range strs {
+func GroupAnagrams(sliceStrings []string) [][]string {
+	m := map[string][]string{}
+	for _, s := range sliceStrings {
 		sl := strings.Split(s, "")
 		sort.Strings(sl)
-		key := [100]string{strings.Join(sl, "")}
+		key := strings.Join(sl, "")
 		val, ok := m[key]
 		if ok {
 			m[key] = append(val, s)
