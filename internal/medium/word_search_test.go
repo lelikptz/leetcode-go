@@ -37,6 +37,7 @@ func TestExist(t *testing.T) {
 			want: false,
 		},
 	}
+
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := Exist(tt.args.board, tt.args.word); got != tt.want {
